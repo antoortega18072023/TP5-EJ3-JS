@@ -1,0 +1,6 @@
+const form = document.querySelector('form')
+const input = document.querySelector('input')
+const btnAgregar = document.getElementById('botonAgregar')
+const h2 = document.querySelector('h2')
+const ul = document.getElementById('listaTareas')
+const sinTareas = document.getElementById('vacio')

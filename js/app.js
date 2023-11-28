@@ -37,4 +37,21 @@ btnAgregar.addEventListener('click', (e) => {
     }
   })
 
+  const agregarBotonEliminar = () => {
+    const btnEliminar = document.createElement('button')
+    btnEliminar.innerText = 'Eliminar'
+    btnEliminar.classList.add('btn', 'btn-danger')
+    btnEliminar.addEventListener('click', (e) => {
+      const item = e.target.parentElement
+      ul.removeChild(item)
   
+      //  Verificar que no hay tareas pendientes para volver a mostrar mensaje
+      const items = document.querySelectorAll('.list-group-item')
+      if(items.length === 0){
+        ul.classList.remove('border')
+        sinTareas.classList.remove('d-none')
+      }
+    })
+  
+    return btnEliminar
+  }

@@ -38,8 +38,24 @@
       </header>
     
       <main class="container my-2">
-        <h1 class="text-center display-1" >Lista de Tarea</h1>
-        
+        <h1 class="text-center display-1 bg-warning-subtle p-2" >Lista de Tarea</h1>
+
+        <form>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="nuevaTarea"
+                placeholder="Agregar tarea..."
+                autocomplete="off"
+                minlength="4"
+                maxlength="30"
+                required
+              >
+              <button id="botonAgregar" class="btn btn-success">Agregar</button>
+            </div>
+          </form>
+
       </main>
     <script src="./js/app.js"></script>
 </body>
